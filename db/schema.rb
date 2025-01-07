@@ -75,9 +75,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_07_022329) do
 
   add_foreign_key "balance_items", "balances"
   add_foreign_key "balance_items", "categories"
-  add_foreign_key "balance_items", "creators"
   add_foreign_key "balance_items", "currencies"
-  add_foreign_key "balance_items", "participants"
-  add_foreign_key "balance_items", "payers"
-  add_foreign_key "balances", "creators"
+  add_foreign_key "balance_items", "users", column: "creator_id"
+  add_foreign_key "balance_items", "users", column: "participant_id"
+  add_foreign_key "balance_items", "users", column: "payer_id"
+  add_foreign_key "balances", "users", column: "creator_id"
 end
