@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creator: one
+  name: MyString
+  description: MyText
+  creation_date: 2025-01-06 23:21:39
+
+two:
+  creator: two
+  name: MyString
+  description: MyText
+  creation_date: 2025-01-06 23:21:39

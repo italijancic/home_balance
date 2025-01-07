@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Balance items" %>
+
+<h1>Balance items</h1>
+
+<div id="balance_items">
+  <% @balance_items.each do |balance_item| %>
+    <%= render balance_item %>
+    <p>
+      <%= link_to "Show this balance item", balance_item %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New balance item", new_balance_item_path %>

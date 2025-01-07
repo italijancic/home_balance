@@ -1,0 +1,12 @@
+<% content_for :title, "Editing balance item" %>
+
+<h1>Editing balance item</h1>
+
+<%= render "form", balance_item: @balance_item %>
+
+<br>
+
+<div>
+  <%= link_to "Show this balance item", @balance_item %> |
+  <%= link_to "Back to balance items", balance_items_path %>
+</div>
